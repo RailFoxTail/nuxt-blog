@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss" scoped>
   .drawer-title {
+
     display: flex;
     justify-content: center;
     flex-direction: column;

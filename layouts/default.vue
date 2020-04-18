@@ -2,6 +2,7 @@
   <v-app>
     <drawer />
     <v-content>
+      <had  v-on:emitHadTitle="changeTitleHad"/>
       <v-container fluid>
         <nuxt />
       </v-container>
@@ -14,10 +15,12 @@
 
 <script>
 
-import Drawer from '@/components/drawer'
+import Drawer from '@/components/client/drawer'
+import Had from '@/components/client/had'
 export default {
   components: {
-    Drawer
+    Drawer,
+    Had
   }
 }
 </script>
